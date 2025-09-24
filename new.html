@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Perlis! Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>TRAVEL PERLIS! GO</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Survey</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="destinations">
+            <h2>TOP TRAVEL DESTINATIONS.</h2>
+            <div class="destination-list">
+                <div class="destination-item">
+                    <img src="pintuWangGunung.jpg" alt="Pintu Wang Gunung">
+                    <div class="destination-details">
+                        <h3>Pintu Wang Gunung</h3>
+                        <p>Price: RM 5</p>
+                        <p class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star-half-alt"></i> 4.5
+                        </p>
+                    </div>
+                </div>
+
+                <div class="destination-item">
+                    <img src="TamanNegeriPerlis.jpg" alt="Taman Negeri Perlis">
+                    <div class="destination-details">
+                        <h3>Taman Negeri Perlis</h3>
+                        <p>Price: RM 2 Adult, RM 1 Children</p>
+                        <p class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="far fa-star"></i> 4.2
+                        </p>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <img src="PasarTerapung.jpg" alt="Pasar Terapung">
+                    <div class="destination-details">
+                        <h3>Pasar Terapung JPS Perlis</h3>
+                        <p>Price: RM 5</p>
+                        <p class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="far fa-star"></i> 3.9
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+    </p>
+    <div class="header">
+        <h2>TRAVEL DESTINATIONS</h2>
+        <div class="filter">
+            <label for="sort">Sort by: </label>
+            <select id="sort">
+                <option value="default">Default</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- All Destinations (Normal Style with Text beside Image) -->
+    <div class="all-destinations">
+        <div class="destination">
+            <img src="pintuWangGunung.jpg" alt="Pintu Wang Gunung">
+            <div>
+                <h2>Pintu Wang Gunung</h2>
+                <p>Price: RM 5</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.5
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="TamanNegeriPerlis.jpg" alt="Taman Negeri Perlis">
+            <div>
+                <h2>Taman Negeri Perlis</h2>
+                <p>Price: RM 2 Adult, RM 1 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="far fa-star"></i> 4.2
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="PasarTerapung.jpg" alt="Pasar Terapung JPS Perlis">
+            <div>
+                <h2>Pasar terapung JPS Perlis</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> 3.9
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="PerlisSnakePark" alt="Perlis Snake Park">
+            <div>
+                <h2>Perlis Snake Park</h2>
+                <p>Price: RM 6 Adult, RM 3 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="far fa-star"></i>  4.0
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="PadangWaremart.jpg" alt="Padang Waremart">
+            <div>
+                <h2>Padang Waremart</h2>
+                <p>Price: Free</p>
+                    <p class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
+                        <i class="far fa-star"></i>  3.9
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="KangarStreetArt.jpeg" alt="Kangar Street Art">
+            <div>
+                <h2>Kangar Street Art</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.4
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="tamanBuahEksotik.jpg" alt="Taman Buah-Buahan Eksotik Perlis">
+            <div>
+                <h2>Taman Buah Buahan Eksotik Perlis</h2>
+                <p>Price: RM 2 Adult, RM 1 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="far fa-star"></i>  3.9
+                </p>
+            </div>
+        </div>
+        <div class="destination">
+             <img src="TamanBunga.jpg" alt="Taman Bunga Kertas">
+             <div>
+                <h2>Taman Bunga Kertas Tuanku Lailatul Shahreen</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="far fa-star"></i>  4.2
+                </p>
+             </div>
+            </div>
+    
+            <div class="destination">
+                <img src="timahTasohDamSquare.jpg" alt="Timah Tasoh Dam Square">
+                <div>
+                <h2>Timah Tasoh Dam Square</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.4
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="perlisHerbalForest" alt="Perlis Herbal Forest">
+                <div>
+                <h2>Perlis Herbal Forest</h2>
+                <p>Price: RM 2 Adult, RM 1 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  4.1
+                </p>
+                </div>
+            </div>
+
+    
+            <div class="destination">
+                <img src="BukitAyer.jpg" alt="Bukit Ayer">
+                <div>
+                <h2>Bukit Ayer Forest Eco Park</h2>
+                <p>Price: RM 2 Adult, RM 1 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  4.0
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="alwiMosque.jpg" alt="Alwi Mosque">
+                <div>
+                <h2>Alwi Mosque</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.7                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="arkedNiaga.jpg" alt="Arked Niaga">
+                <div>
+                <h2>Arked Niaga Padang Besar</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  3.9
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="ladangBurungUnta.webp" alt="Ladang Burung Unta">
+                <div>
+                <h2>Perlis Ostrich Farm</h2>
+                <p>Price= RM 2 Adult, RM 1 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.3
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="pengkalanAsam.jpg" alt="Pengkalan Asam">
+                <div>
+                <h2>Pengkalan Asam Trails Recreational Park</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  4.2
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="GuaKelam.jpg" alt="Gua Kelam">
+                <div>
+                <h2>Kelam Cave</h2>
+                <p>Price: RM 5 Adult, RM 2 Children</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.4
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="WangKelian.jpg" alt="Wang Kelian">
+                <div>
+                <h2>Wang Kelian Viewpoint</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.6
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="KotaKayang.jpg" alt="Kota Kayang Museum">
+                <div>
+                <h2>Kota Kayang Museum</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.5
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="tasikMelati.jpg" alt="Tasik Melati">
+                <div>
+                <h2>Tasik Melati Recreational Park</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  4.1
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="BukitKubu.jpg" alt="Bukit Kubu">
+                <div>
+                <h2>Bukit Kubu Recreational Forest</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  3.9
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="AlHussain.jpg" alt="Al-Hussain">
+                <div>
+                <h2>Al-Hussain Mosque</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.6
+                </p>
+            </div>
+            </div>
+    
+            <div class="destination">
+                <img src="LadangNipah.JPG" alt="Ladang Nipah Kipli">
+                <div>
+                <h2>Ladang Nipah Kipli</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>  4.2
+                </p>
+                </div>
+            </div>
+    
+            <div class="destination">
+                <img src="GuaWangBurma.jpg" alt="Gua Wang Burma">
+                <div>
+                <h2>Gua Wang Burma</h2>
+                <p>Price: Free</p>
+                <p class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i> 4.7
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Travel Perlis! Go. All rights reserved.</p>
+    </footer>
+</body>
+</html>
