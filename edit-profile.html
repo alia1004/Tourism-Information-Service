@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .edit-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        .edit-container input[type="text"],
+        .edit-container input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .edit-container .save-button,
+        .edit-container .cancel-button {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .edit-container .save-button {
+            background-color: #4CAF50;
+        }
+        .edit-container .save-button:hover {
+            background-color: #45a049;
+        }
+        .edit-container .cancel-button {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+        .edit-container .cancel-button:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+<div class="edit-container">
+    <h2>Edit Profile</h2>
+    <input type="text" id="editUsername" placeholder="Enter your username" required>
+    <input type="email" id="editEmail" placeholder="Enter your email" required>
+    <button class="save-button" onclick="saveProfile()">Save</button>
+    <a href="view-profile.html" class="cancel-button">Cancel</a>
+</div>
+
+<script>
+    // Load existing profile data from local storage
+    const profileData = JSON.parse(localStorage.getItem('travelProfile'));
+
+    if (profileData) {
+        document.getElementById('editUsername').value = profileData.username;
+        document.getElementById('editEmail').value = profileData.email;
+    } else {
+        alert("No profile data found. Please create a profile first.");
+        window.location.href = 'create-profile.html';
+    }
+
+    function saveProfile() {
+        const username = document.getElementById('editUsername').value;
+        const email = document.getElementById('editEmail').value;
+
+        if (username && email) {
+            const updatedProfile = { username, email };
+            localStorage.setItem('travelProfile', JSON.stringify(updatedProfile));
+            window.location.href = 'view-profile.html'; // Redirect to view-profile after saving
+        } else {
+            alert("Please fill out all fields.");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
